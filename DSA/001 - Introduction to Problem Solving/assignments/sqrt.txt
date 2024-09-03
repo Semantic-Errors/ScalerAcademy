@@ -1,0 +1,42 @@
+Step 0:
+    L = 1, R = 32, cnt = 1
+
+1st Iteration:
+    mid = (floor) (36+1)/2 = 18
+    cnt = 2
+
+    mid * mid = 324 
+        (mid * mid > N):
+            R = mid - 1 = 17
+
+2nd Iteration:
+    L = 1, R = 17, cnt = 2
+
+    mid = (floor) (17+1)/2 = 9
+    cnt = 3
+
+    mid * mid = 81
+        (mid * mid > N):
+            R = mid - 1 = 8
+
+3rd Iteration:
+    L = 1, R = 8, cnt = 3
+
+    mid = (floor) (8+1)/2 = 4
+    cnt = 4
+
+    mid * mid = 16
+        (mid * mid < N):
+            L = mid + 1 = 5
+
+4th Iteration:
+    L = 5, R= 8, cnt = 4
+
+    mid = (floor) (5+8)/2 = 6
+    cnt = 5
+
+    mid * mid = 6 * 6 = 36
+        (mid * mid == N)
+            print(6)
+
+FINISH: sqrt = 6, cnt = 5
